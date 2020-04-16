@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.book-container {
+  width: 80%;
+  margin: 20px auto;
+  padding: 2%;
+  background-color: rgba(215,215,215,0.5)
+}
+
+.book-thumbnail {
+  display: inline-block;
+  margin: 4% 4%;
+  vertical-align: top;
+  width: 10%;
+}
+
+.book-text {
+  display: inline-block;
+  width: 80%;
+}
