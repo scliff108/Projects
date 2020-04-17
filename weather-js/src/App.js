@@ -22,9 +22,7 @@ class App extends React.Component {
     });
   }
 
-  componentDidMount() {
-    let token = 'fd3d9ed3bf6df3';
-    
+  componentDidMount() {    
     fetch('http://ip-api.com/json/')
       .then(res => res.json())
       .then(data => {
@@ -34,6 +32,10 @@ class App extends React.Component {
   }
 
   render() {
+    if (!this.state.city || !this.state.country) {
+      return <div />
+    }
+    
     return (
       <div className="App container">
         <h1 className="pageTitle">Weather for {this.state.city}, {this.state.region}</h1>
