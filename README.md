@@ -11,3 +11,4 @@ My goal is to complete one project a day starting April 15, 2020.
 1. [Hangman](hangman-py) - Python - 4/15/2020
 1. [Book Search](booksearch-js/client) - React - 4/16/2020
 1. [Weather Update](weather-js) - React - 4/17/2020
+1. [COVID Jupyter Notbook](COVID-py) - Python 4/18/2020
