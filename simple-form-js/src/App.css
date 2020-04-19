@@ -1,0 +1,21 @@
+.container {
+  margin-top: 16px;
+}
+
+header, section {
+  padding: 16px;
+  margin: 4px;
+}
+
+.header {
+  background-color: lightcoral;
+}
+
+.form {
+  background-color: lightblue;
+}
+
+.results {
+  background-color: darkblue;
+  color: white;
+}
