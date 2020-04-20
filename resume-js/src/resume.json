@@ -1,0 +1,109 @@
+{
+    "personal": {
+        "firstName": "Shamus",
+        "lastName": "Clifford",
+        "email": "scliff108@gmail.com",
+        "phone": "(508) 397-5287",
+        "linkedin": "linkedin.com/in/shamusclifford/",
+        "location": {
+            "city": "Mansfield",
+            "state": "MA",
+            "countryCode": "US",
+            "postalCode": "02048"
+        },
+        "summary": ""
+    },
+    "work": [
+        {
+            "company": "Brockton Public Schools",
+            "current": true,
+            "position": "Teacher (Computer Science)",
+            "startDate": "September 2018",
+            "endDate": "Present",
+            "details": [
+                "Taught Computer Science in classrooms up to 30 high school students.",
+                "Developed the Introduction to Programming and Code Lab Curriculum taught at Brockton High School",
+                "Certified to teach Project Lead the Way Computer Science Essentials."
+            ]
+        },
+        {
+            "company": "Brockton Public Schools",
+            "current": false,
+            "position": "Web Content Manager",
+            "startDate": "December 2017",
+            "endDate": "September 2018",
+            "details": [
+                "Managed content on the Brockton Public Schools website, ensuring content was ADA compliant.",
+                "Developed and maintained the Brockton Public Schools website, Staff Intranet, Student Intranet, and newsletter.",
+                "Collaborated with the Director of Communications in developing new features for the website.",
+                "Covered events and wrote articles about the great things Brockton students are doing throughout the year."
+            ]
+        },
+        {
+            "company": "Brockton Public Schools",
+            "current": false,
+            "position": "Monitor/Teacher Assistant",
+            "startDate": "October 2016",
+            "endDate": "December 2017",
+            "details": [
+                "Trained instructors and guidance counselors learning the new Office 365 system.",
+                "Activated and distributed Sprint devices for the Sprint 1 Million Project.",
+                "Assisted the Dean and Assistant Dean with daily activities including classroom coverage, discipline, and hall/cafeteria duties.",
+                "Created a safe learning environment for students by developing relationships centered on trust."
+            ]
+        }
+    ],
+    "education": {
+        "institution": "University of Massachusetts Amherst",
+        "school": [
+            "Isenberg School of Management",
+            "Commonwealth Honors College"
+        ],
+        "degree": "Bachelor of Business Administration",
+        "major": "Finance",
+        "concentration": "Corporate Finance",
+        "minor": "Information Technology",
+        "endDate": "May 2016",
+        "details": [
+            "Suma Cum Laude",
+            "Isenberg Business and Law Club"
+        ]
+    },
+    "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Python",
+        "Solidity",
+        "React",
+        "Node",
+        "Git",
+        "WordPress"
+    ],
+    "certifications": [
+        {
+            "organization": "Udacity",
+            "name": "Certified Machine Learning Engineer",
+            "date": "February 22, 2020",
+            "link": "https://graduation.udacity.com/confirm/NN966J5N"
+        },
+        {
+            "organization": "Udacity",
+            "name": "Certified Blockchain Developer",
+            "date": "August 19, 2019",
+            "link": "https://confirm.udacity.com/QV6SJ4G5"
+        },
+        {
+            "organization": "freeCodeCamp",
+            "name": "Javascript Algorithms and Data Structures",
+            "date": "March, 22, 2020",
+            "link": "https://www.freecodecamp.org/certification/fcc7d097cfb-7583-4614-b96e-09a6d9f26646/javascript-algorithms-and-data-structures"
+        },
+        {
+            "organization": "freeCodeCamp",
+            "name": "Responsive Web Design",
+            "date": "November 7, 2019",
+            "link": "https://www.freecodecamp.org/certification/fcc7d097cfb-7583-4614-b96e-09a6d9f26646/responsive-web-design"
+        }
+    ]
+}
