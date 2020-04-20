@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Job from './Job';
 
 class Work extends React.Component {
     constructor(props) {
@@ -6,8 +7,15 @@ class Work extends React.Component {
     }
 
     render() {
+        const workJSON = this.props.work;
+        let work = workJSON.map(job => {
+            return (
+                <Job job={job} />
+            );
+        });
+
         return (
-            <p>Work</p>
+            <div>{work}</div>
         );
     }
 }

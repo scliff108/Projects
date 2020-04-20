@@ -19,11 +19,11 @@ class App extends React.Component {
     const resume = this.props.resume;
     return (
       <div className="App">
-        <Hero />
-        <Work />
-        <Education />
-        <Certifications />
-        <Skills />
+        <Hero personal={resume.personal} />
+        <Work work={resume.work} />
+        <Education education={resume.education} />
+        <Certifications certifications={resume.certifications} />
+        <Skills skills={resume.skills} />
       </div>
     );
   }

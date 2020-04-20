@@ -6,8 +6,13 @@ class Skills extends React.Component {
     }
 
     render() {
+        const skillsJSON = this.props.skills;
+        let skills = skillsJSON.map(skill => {
+            return <p>{skill}</p>;
+        });
+
         return (
-            <p>Skills</p>
+            <div>{skills}</div>
         );
     }
 }

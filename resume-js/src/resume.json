@@ -4,14 +4,11 @@
         "lastName": "Clifford",
         "email": "scliff108@gmail.com",
         "phone": "(508) 397-5287",
-        "linkedin": "linkedin.com/in/shamusclifford/",
         "location": {
             "city": "Mansfield",
-            "state": "MA",
-            "countryCode": "US",
-            "postalCode": "02048"
+            "state": "MA"
         },
-        "summary": ""
+        "summary": "I am an educator passionate about giving students an opportunity to explore the field of Computer Science. I have completed the Udacity Blockchain Developer Nanodegree and the Udacity Machine Learning Engineer Nanodegree."
     },
     "work": [
         {
@@ -55,7 +52,7 @@
     ],
     "education": {
         "institution": "University of Massachusetts Amherst",
-        "school": [
+        "schools": [
             "Isenberg School of Management",
             "Commonwealth Honors College"
         ],
@@ -69,6 +66,36 @@
             "Isenberg Business and Law Club"
         ]
     },
+    "certifications": [
+        {
+            "organization": "Udacity",
+            "name": "Certified Machine Learning Engineer",
+            "date": "February 22, 2020",
+            "link": "https://graduation.udacity.com/confirm/NN966J5N",
+            "summary": ""
+        },
+        {
+            "organization": "Udacity",
+            "name": "Certified Blockchain Developer",
+            "date": "August 19, 2019",
+            "link": "https://confirm.udacity.com/QV6SJ4G5",
+            "summary": ""
+        },
+        {
+            "organization": "freeCodeCamp",
+            "name": "Javascript Algorithms and Data Structures",
+            "date": "March, 22, 2020",
+            "link": "https://www.freecodecamp.org/certification/fcc7d097cfb-7583-4614-b96e-09a6d9f26646/javascript-algorithms-and-data-structures",
+            "summary": ""
+        },
+        {
+            "organization": "freeCodeCamp",
+            "name": "Responsive Web Design",
+            "date": "November 7, 2019",
+            "link": "https://www.freecodecamp.org/certification/fcc7d097cfb-7583-4614-b96e-09a6d9f26646/responsive-web-design",
+            "summary": ""
+        }
+    ],
     "skills": [
         "HTML",
         "CSS",
@@ -79,31 +106,5 @@
         "Node",
         "Git",
         "WordPress"
-    ],
-    "certifications": [
-        {
-            "organization": "Udacity",
-            "name": "Certified Machine Learning Engineer",
-            "date": "February 22, 2020",
-            "link": "https://graduation.udacity.com/confirm/NN966J5N"
-        },
-        {
-            "organization": "Udacity",
-            "name": "Certified Blockchain Developer",
-            "date": "August 19, 2019",
-            "link": "https://confirm.udacity.com/QV6SJ4G5"
-        },
-        {
-            "organization": "freeCodeCamp",
-            "name": "Javascript Algorithms and Data Structures",
-            "date": "March, 22, 2020",
-            "link": "https://www.freecodecamp.org/certification/fcc7d097cfb-7583-4614-b96e-09a6d9f26646/javascript-algorithms-and-data-structures"
-        },
-        {
-            "organization": "freeCodeCamp",
-            "name": "Responsive Web Design",
-            "date": "November 7, 2019",
-            "link": "https://www.freecodecamp.org/certification/fcc7d097cfb-7583-4614-b96e-09a6d9f26646/responsive-web-design"
-        }
     ]
 }

@@ -6,8 +6,20 @@ class Certifications extends React.Component {
     }
 
     render() {
+        const certificationsJSON = this.props.certifications;
+        let certifications = certificationsJSON.map(cert => {
+            return (
+                <>
+                <p><a href={cert.link}>{cert.name}</a></p>
+                <p>{cert.organization}</p>
+                <p>{cert.date}</p>
+                <p>{cert.summary}</p>
+                </>
+            );
+        });
+
         return (
-            <p>Certifications</p>
+            <div>{certifications}</div>
         );
     }
 }
