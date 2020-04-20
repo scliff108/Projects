@@ -8,11 +8,13 @@ class Skills extends React.Component {
     render() {
         const skillsJSON = this.props.skills;
         let skills = skillsJSON.map(skill => {
-            return <p>{skill}</p>;
+            return <button className="btn btn-primary btn-lg disabled">{skill}</button>;
         });
 
         return (
-            <div>{skills}</div>
+        <div className="d-flex justify-content-center">
+        {skills}
+        </div>
         );
     }
 }

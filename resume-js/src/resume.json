@@ -51,7 +51,7 @@
         }
     ],
     "education": {
-        "institution": "University of Massachusetts Amherst",
+        "institution": "The University of Massachusetts Amherst",
         "schools": [
             "Isenberg School of Management",
             "Commonwealth Honors College"
@@ -63,7 +63,7 @@
         "endDate": "May 2016",
         "details": [
             "Suma Cum Laude",
-            "Isenberg Business and Law Club"
+            "Member of the Isenberg Business and Law Club"
         ]
     },
     "certifications": [
@@ -71,29 +71,33 @@
             "organization": "Udacity",
             "name": "Certified Machine Learning Engineer",
             "date": "February 22, 2020",
-            "link": "https://graduation.udacity.com/confirm/NN966J5N",
-            "summary": ""
+            "certificationLink": "https://graduation.udacity.com/confirm/NN966J5N",
+            "organizationLink": "https://www.udacity.com/course/machine-learning-engineer-nanodegree--nd009t",
+            "summary": "Learn advanced machine learning techniques and algorithms and how to package and deploy your models to a production environment. Gain practical experience using Amazon SageMaker to deploy trained models to a web application and evaluate the performance of your models. A/B test models and learn how to update the models as you gather more data, an important skill in industry."
         },
         {
             "organization": "Udacity",
             "name": "Certified Blockchain Developer",
             "date": "August 19, 2019",
-            "link": "https://confirm.udacity.com/QV6SJ4G5",
-            "summary": ""
+            "certificationLink": "https://confirm.udacity.com/QV6SJ4G5",
+            "organizationLink": "https://www.udacity.com/course/blockchain-developer-nanodegree--nd1309",
+            "summary": "Learn the fundamentals of the blockchain platform. Create your own private blockchain, and secure a digital asset using blockchain identity. Explore the Ethereum platform, and use Solidity and smart contracts to develop your own decentralized app."
         },
         {
             "organization": "freeCodeCamp",
             "name": "Javascript Algorithms and Data Structures",
             "date": "March, 22, 2020",
-            "link": "https://www.freecodecamp.org/certification/fcc7d097cfb-7583-4614-b96e-09a6d9f26646/javascript-algorithms-and-data-structures",
-            "summary": ""
+            "certificationLink": "https://www.freecodecamp.org/certification/fcc7d097cfb-7583-4614-b96e-09a6d9f26646/javascript-algorithms-and-data-structures",
+            "organizationLink": "https://www.freecodecamp.org/learn",
+            "summary": "Time to put your newly learnt skills to work! By working on projects you would have the opportunity of applying all the skills, principles and concepts you have learnt so far HTML, CSS, Visual Design, Accessibility, etc."
         },
         {
             "organization": "freeCodeCamp",
             "name": "Responsive Web Design",
             "date": "November 7, 2019",
-            "link": "https://www.freecodecamp.org/certification/fcc7d097cfb-7583-4614-b96e-09a6d9f26646/responsive-web-design",
-            "summary": ""
+            "certificationLink": "https://www.freecodecamp.org/certification/fcc7d097cfb-7583-4614-b96e-09a6d9f26646/responsive-web-design",
+            "organizationLink": "https://www.freecodecamp.org/learn",
+            "summary": "JavaScript is a high-level programming language that all modern web browsers support. It is also one of the core technologies of the web, along with HTML and CSS that you may have learned previously. This section will cover basic JavaScript programming concepts, which range from variables and arithmetic to objects and loops."
         }
     ],
     "skills": [

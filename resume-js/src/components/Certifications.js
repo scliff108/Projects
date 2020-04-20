@@ -10,17 +10,17 @@ class Certifications extends React.Component {
         let certifications = certificationsJSON.map(cert => {
             return (
                 <>
-                <p><a href={cert.link}>{cert.name}</a></p>
-                <p>{cert.organization}</p>
-                <p>{cert.date}</p>
-                <p>{cert.summary}</p>
+                <h3><a href={cert.certificationLink}>{cert.name}</a> <small className="text-muted">{cert.date}</small></h3>
+                <p></p>
+                <blockquote className="blockquote">
+                    <p className="mb-0">{cert.summary}</p>
+                    <footer className="blockquote-footer text-center"><a href={cert.organizationLink}>{cert.organization}</a></footer>
+                </blockquote>
                 </>
             );
         });
 
-        return (
-            <div>{certifications}</div>
-        );
+        return <>{certifications}</>;
     }
 }
 

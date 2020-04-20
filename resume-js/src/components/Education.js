@@ -8,19 +8,24 @@ class Education extends React.Component {
     render() {
         const education = this.props.education;
         let schools = education.schools.map(school => {
-            return <p>{school}</p>;
+            return <li className="list-group-item">{school}</li>;
         });
         let details = education.details.map(detail => {
-            return <li>{detail}</li>;
+            return <li className="list-group-item">{detail}</li>;
         });
 
         return (
             <>
-            <p>{education.institution} - {education.endDate}</p>
-            {schools}
-            <p>{education.degree} - {education.major} ({education.concentration})</p>
-            <p>{education.minor}</p>
-            <ul>{details}</ul>
+            <div className="education">
+                <h3>{education.institution} <small className="text-muted">{education.endDate}</small></h3>
+                <p>{education.degree} in {education.major} (concentration in {education.concentration}) with a minor in {education.minor}.</p>
+                <div className="text-center">
+                <div className="row justify-content-center">
+                <ul className="list-group col-lg-6 col-md-8">{schools}{details}</ul>
+                </div>
+                </div>
+                
+            </div>
             </>
         );
     }

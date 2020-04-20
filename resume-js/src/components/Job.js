@@ -13,8 +13,15 @@ class Job extends React.Component {
 
         return (
             <>
-            <p>{job.position} - {job.company}</p>
-            <p>{job.startDate} - {job.endDate}</p>
+            <div className="d-flex justify-content-between align-items-center">
+                <div>
+                    <h2>{job.position}</h2>
+                    <h3>{job.company}</h3>
+                </div>
+                <div>
+                    <p>{job.startDate} - {job.endDate}</p>
+                </div>
+            </div>
             <ul>{details}</ul>
             </>
         )

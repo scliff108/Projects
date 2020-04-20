@@ -11,11 +11,30 @@ class Hero extends React.Component {
         
         return (
         <>
-            <h1>{personal.firstName} {personal.lastName}</h1>
-            <p>{personal.summary}</p>
-            <p>{personal.location.city}, {personal.location.state}</p>
-            <p>Email: <a href={'mailto:' + personal.email}>{personal.email}</a></p>
-            <p>Phone: {personal.phone}</p>
+        <h1>{personal.firstName} {personal.lastName}</h1>
+        <p>{personal.summary}</p>
+        <div className="row">
+            <div className="col-lg">
+                <p>
+                    <strong>From: </strong>
+                    {personal.location.city}, {personal.location.state}
+                </p>
+            </div>
+            <div className="col-lg">
+                <p>
+                    <strong>Email: </strong>
+                    <a href={'mailto:' + personal.email}>
+                        {personal.email}
+                    </a>
+                </p>
+            </div>
+            <div className="col-lg">
+                <p>
+                    <strong>Phone: </strong>
+                    {personal.phone}
+                </p>
+            </div>
+        </div>
         </>
         );
     }

@@ -14,9 +14,7 @@ class Work extends React.Component {
             );
         });
 
-        return (
-            <div>{work}</div>
-        );
+        return <>{work}</>;
     }
 }
 
