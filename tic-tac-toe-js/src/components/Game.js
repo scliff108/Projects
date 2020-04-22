@@ -51,28 +51,29 @@ class Game extends React.Component {
   }
 
   render() {
-    const history = this.state.descendingOrder ? 
-      this.state.history : 
-      this.state.history.slice(0).reverse();
+    const history = this.state.history;
     const current = history[this.state.stepNumber];
     const winningSquares = calculateWinner(current.squares);
+
     let winner;
     if (winningSquares) {
       winner = current.squares[winningSquares[0]];
     }
-
+    
     const moves = history.map((step, move) => {
-      move = this.state.descendingOrder ? move : history.length - move - 1;
-      const desc = !move ? 
-        'Go to game start' :
-        move  === this.state.stepNumber ? 
-        <strong>Go to move # {move} ({step.col}, {step.row})</strong> :
-        'Go to move # ' + move + ' (' + step.col + ', ' + step.row + ')';
+      let description = '';
+      if (!move) {
+        description = 'Go to game start'
+      } else if (move === this.state.stepNumber) {
+        description = <strong>Go to move # {move} ({step.col}, {step.row})</strong>;
+      } else {
+        description = 'Go to move # ' + move + ' (' + step.col + ', ' + step.row + ')';
+      }
 
       return (
         <li key={move}>
           <button onClick={() => this.jumpTo(move)}>
-            {desc}
+            {description}
           </button>
         </li>
       );
@@ -99,7 +100,7 @@ class Game extends React.Component {
         <div className="game-info">
           <div>{status}</div>
           <button onClick={() => this.handleToggle()}>Toggle Order</button>
-          <ul>{moves}</ul>
+          <ul>{this.state.descendingOrder ? moves : moves.reverse()}</ul>
         </div>
       </div>
     );
