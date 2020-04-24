@@ -1,9 +1,9 @@
 import React from 'react';
-import { Modal, Button } from 'react-bootstrap';
-import ImageDescription from './Modal/ImageDescription';
-import BodyParts from './Modal/BodyParts';
-import Reps from './Modal/Reps';
-import Equipment from './Modal/Equipment';
+import { Modal, Button, Badge } from 'react-bootstrap';
+import ImageDescription from './ImageDescription';
+import BodyParts from './BodyParts';
+import Reps from './Reps';
+import Equipment from './Equipment';
 
 const ExerciseModal = (props) => {
   return (
@@ -11,6 +11,7 @@ const ExerciseModal = (props) => {
       <Modal.Header closeButton>
         <Modal.Title>
           {props.exercise}
+          <Badge variant="dark" className="mx-2">{props.mainmuscle}</Badge>
         </Modal.Title>
       </Modal.Header>
         <Modal.Body>
@@ -20,9 +21,11 @@ const ExerciseModal = (props) => {
             start={props.images.start}
             end={props.images.end}
           />
-          <BodyParts bodyparts={props.bodyparts} />
-          <Equipment equipment={props.equipment} />
-          <Reps reps={props.reps} />
+          <div className="text-center">
+            <BodyParts bodyparts={props.bodyparts} />
+            <Equipment equipment={props.equipment} />
+            <Reps reps={props.reps} />
+          </div>
         </Modal.Body>
         <Modal.Footer>
           <Button onClick={props.onHide}>Close</Button>
