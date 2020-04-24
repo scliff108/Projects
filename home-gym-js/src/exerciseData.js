@@ -426,19 +426,6 @@ export default [
     "reps": [],
     },
     {
-    "exercise": "Arnold Press",
-    "description": "",
-    "category": "Shoulders",
-    "bodyparts": [],
-    "equipment": [],
-    "images": {
-    "thumbnail": pushupImg,
-    "start": pushupImg,
-    "end": pushupImg
-    },
-    "reps": [],
-    },
-    {
     "exercise": "Front-Shoulder Raise",
     "description": "",
     "category": "Shoulders",

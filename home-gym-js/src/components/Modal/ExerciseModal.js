@@ -11,7 +11,7 @@ const ExerciseModal = (props) => {
       <Modal.Header closeButton>
         <Modal.Title>
           {props.exercise}
-          <Badge variant="dark" className="mx-2">{props.mainmuscle}</Badge>
+          <Badge variant="dark" className="mx-2">{props.category}</Badge>
         </Modal.Title>
       </Modal.Header>
         <Modal.Body>
@@ -22,9 +22,9 @@ const ExerciseModal = (props) => {
             end={props.images.end}
           />
           <div className="text-center">
-            <BodyParts bodyparts={props.bodyparts} />
-            <Equipment equipment={props.equipment} />
-            <Reps reps={props.reps} />
+            <BodyParts bodyparts={props.bodyparts} size="h4" heading={true} />
+            <Equipment equipment={props.equipment} size="h4" heading={true} />
+            <Reps reps={props.reps} size="h4" heading={true} />
           </div>
         </Modal.Body>
         <Modal.Footer>
