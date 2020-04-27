@@ -9,8 +9,8 @@ const BodyParts = (props) => {
   });
   return (
     <>
-    {props.heading ? <h4>Muscle Groups</h4> : <div />}
-    <p className={props.size}>{badges}</p>
+    {props.heading ? <h4>Muscle Groups</h4> : <span />}
+    <span className={props.size}>{badges}</span>
     </>
   );
 }

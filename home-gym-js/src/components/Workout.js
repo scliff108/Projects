@@ -1,47 +1,45 @@
 import React from 'react';
 import { Card, Button, Badge } from 'react-bootstrap';
 import GymModal from './GymModal';
-import BodyParts from './BodyParts';
-import Equipment from './Equipment';
-import Reps from './Reps';
 
-const Exercise = (props) => {
+const Workout = (props) => {
   const [modalShow, setModalShow] = React.useState(false);
-
+  const exercises = props.exercises.map((exercise, idx) => {
+    return <p>{exercise}</p>;
+  });
   return (
     <>
     <div>
       <Card>
-        <Card.Img variant="top" src={props.thumbnail} alt="IMG" style={{cursor: "pointer"}} onClick={() => setModalShow(true)}/>
         <Card.Body>
           <Card.Title>
-            {props.exercise}
+            {props.workout}
             <Badge variant="dark" className="mx-2">{props.category}</Badge>
           </Card.Title>
           <Card.Text>
-            <p><BodyParts bodyparts={props.bodyparts} size="h6" heading={false} /></p>
-            <p><Equipment equipment={props.equipment} size="h6" heading={false} /></p>
-            <p><Reps reps={props.reps} size="h6" heading={false} /></p>
+            <p>{props.level}</p>
+            <p>Exercises: {exercises.length}</p>
           </Card.Text>
-          <Button 
+          <Button
             variant="primary"
             onClick={() => setModalShow(true)}
             block>
-              View Exercise
-            </Button>
+              View Workout
+          </Button>
         </Card.Body>
       </Card>
+      <h1>{props.name}</h1>
+      <div>{exercises}</div>
     </div>
 
     <GymModal
       show={modalShow}
       onHide={() => setModalShow(false)}
-      exercise={true}
+      exercise={false}
       {...props}
     />
     </>
   );
 }
 
-
-export default Exercise;
+export default Workout;

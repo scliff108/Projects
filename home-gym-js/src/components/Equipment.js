@@ -11,8 +11,8 @@ const Equipment = (props) => {
     <Badge variant="secondary" className="mx-1">No Equipment Needed</Badge>;
   return (
     <>
-    {props.heading ? <h4>Equipment</h4> : <div />}
-    <p className={props.size}>{badges}</p>
+    {props.heading ? <h4>Equipment</h4> : <span />}
+    <span className={props.size}>{badges}</span>
     </>
   );
 }
