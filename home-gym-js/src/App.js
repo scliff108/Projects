@@ -13,10 +13,6 @@ class App extends Component {
       return <Exercise {...exercise} key={idx} />;
     });
 
-    /*const workouts = exerciseData.workouts.map((workout, idx) => {
-      return <Workout {...workout} key={idx} />;
-    });*/
-
     return (
       <Container fluid>
         <Jumbotron>
